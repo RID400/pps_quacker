@@ -18,7 +18,7 @@ COPY . .
 EXPOSE 5000
 
 # Establecer variables de entorno
-ENV MONGO_IP="localhost"
+ENV MONGO_IP="mongo"
 ENV MONGO_PORT="27017"
 
 # Comando para ejecutar la aplicación
