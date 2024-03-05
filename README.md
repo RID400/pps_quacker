@@ -10,6 +10,8 @@ Actualmente sin mantenimiento debido al éxito de la competencia. Si quieres hac
 ## Instrucciones de uso
 Aplicación desarrollada en Python (v3.11) con Flask y Mongo como dependencias principales. Levanta primero un servidor de Mongo en local.
 
+Desplazate al directorio del programa
+
 Creación de contenedores, imagenes, volumenes y red mediante docker compose
 
     docker compose up -d
