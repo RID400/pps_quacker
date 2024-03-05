@@ -26,8 +26,10 @@ Ejecutar docker con mongodb
 
     sudo docker run -p 27017:27017 -d mongo:4.4.18
 
-Luego ejecuta la aplicación con
+Luego ejecuta la aplicación, deberás establecer variables de entorno para la sesión.
 
+    export MONGO_IP="localhost"
+    export MONGO_PORT="27017"
     python app.py
 
 Desplegará un servidor web en [http://127.0.0.1:5000](http://127.0.0.1:5000)
