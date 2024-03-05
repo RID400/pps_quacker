@@ -67,7 +67,7 @@ def requack(user_token: str):
     if not user:
         return Response(response='User token not valid, did you login?', status=404)
     elif not quack_id:
-        return Response(response='Please, provide a quack id', status=403)
+        return Response(response='Please,/home/iml/desarrollo/quacker_mongo/mongo.py provide a quack id', status=403)
     
     quack = QuackService.get_quack(quack_id)
     if not quack:
