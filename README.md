@@ -10,6 +10,18 @@ Actualmente sin mantenimiento debido al éxito de la competencia. Si quieres hac
 ## Instrucciones de uso
 Aplicación desarrollada en Python (v3.11) con Flask como dependencia principal.
 
+Crear entorno virtual
+
+    python3 -m venv nombre_venv
+
+Activar entorno virtual
+
+    source nombre_venv/bin/activate
+
+Resolver dependencias:
+
+    pip install -r requirements.txt *
+
     python app.py
 
 Desplegará un servidor web en [http://127.0.0.1:5000](http://127.0.0.1:5000)
@@ -19,7 +31,7 @@ En el index se mostrará una tabla con los quacks de todos los usuarios, pero cu
 ### API REST
 No cuenta con funcionalidad CRUD completa. Se exponen los siguientes endpoints (acompaño explicación y ejemplos):
   - __\[POST\] /signup__ (registrar nuevo usuario). Espera un JSON con la siguiente estructura:
-  
+
         {
             "username": "",
             "password": ""
@@ -36,7 +48,7 @@ No cuenta con funcionalidad CRUD completa. Se exponen los siguientes endpoints (
                 "password": "1234"
             }'
   - __\[POST\] /login__ (login de usuario). Espera un JSON con la siguiente estructura:
-  
+
         {
             "username": "",
             "password": ""
