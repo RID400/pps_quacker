@@ -10,21 +10,11 @@ Actualmente sin mantenimiento debido al éxito de la competencia. Si quieres hac
 ## Instrucciones de uso
 Aplicación desarrollada en Python (v3.11) con Flask y Mongo como dependencias principales. Levanta primero un servidor de Mongo en local.
 
-Crear red entre contenedores
+Creación de contenedores, imagenes, volumenes y red mediante docker compose
 
-    sudo docker network create quacker-mongo
+    docker compose up -d
 
-Crear imagen de aplicacion
-
-    sudo docker build -t quack .
-
-Ejecutar docker con mongodb
-
-    sudo docker run --name mongo -d --network quacker-mongo --name mongo -p 27017:27017 -d mongo:4.4.18
-
-Ejecutar docker con imagen de aplicación
-
-    sudo docker run -d --network quacker-mongo --name quacker -p 5000:5000 quacker
+Quedará ejecutada la aplicación, disfruta :D
 
 Desplegará un servidor web en [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
